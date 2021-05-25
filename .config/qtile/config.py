@@ -11,7 +11,7 @@ from libqtile.lazy import lazy
 from typing import List  # noqa: F401
 
 mod = "mod4"                                        # Sets mod key to SUPER/WINDOWS
-myTerm = "st"                                       # My terminal of choice
+myTerm = "alacritty"                                       # My terminal of choice
 
 keys = [
          ### The essentials
@@ -513,9 +513,7 @@ def init_widgets_screen2():
     return widgets_screen2                 # Monitor 2 will display all widgets in widgets_list
 
 def init_screens():
-    return [Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=1.0, size=20)),
-            Screen(top=bar.Bar(widgets=init_widgets_screen1(), opacity=1.0, size=20))]
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen2(), opacity=0.85, size=20))]
 
 if __name__ in ["config", "__main__"]:
     screens = init_screens()
