@@ -364,7 +364,7 @@ def init_widgets_list():
                        fontsize = 37
                        ),
              widget.Net(
-                       interface = "enp0s3",
+                       interface = "wlan0",
                        format = '{down} ↓↑ {up} ',
                        foreground = colors[2],
                        background = colors[4],
