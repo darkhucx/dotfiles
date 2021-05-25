@@ -1,0 +1,5 @@
+[submodule "wallpapers"]
+	url = https://gitlab.com/dwt1/wallpapers.git
+[submodule "dots/wallpapers"]
+	path = dots/wallpapers
+	url = https://gitlab.com/dwt1/wallpapers
